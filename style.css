@@ -1,1 +1,116 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray text */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex; /* Enable flexbox for easy layout */
+    flex-direction: column; /* Stack elements vertically */
 
+    /* Background Image */
+    background-image: url('images/background.jpg'); /* Adjust path as needed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Content Area */
+main {
+    flex-grow: 1; /* Allow main content to expand and take available space */
+    padding: 20px;
+    max-width: 960px; /* Limit content width for readability */
+    margin: 20px auto; /* Center the content area horizontally */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners for the content box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* File List Section */
+.file-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.file-list h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #007bff; /* Blue heading */
+}
+
+.file-list p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Download Button Styles */
+.download-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .file-list li {
+        padding: 10px;
+    }
+
+    .download-button {
+        width: 100%; /* Full width buttons on smaller screens */
+        text-align: center;
+    }
+}
